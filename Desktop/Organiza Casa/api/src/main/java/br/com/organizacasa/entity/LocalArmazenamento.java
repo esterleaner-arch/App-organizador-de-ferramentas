@@ -28,6 +28,14 @@ public class LocalArmazenamento {
     @Column(length = 255)
     private String descricao;
 
+    private String comodo;
+
+    private String armario;
+
+    private String prateleira;
+
+    private String caixa;
+
     @JsonIgnore
     @Builder.Default
     @OneToMany(mappedBy = "local", cascade = CascadeType.ALL)

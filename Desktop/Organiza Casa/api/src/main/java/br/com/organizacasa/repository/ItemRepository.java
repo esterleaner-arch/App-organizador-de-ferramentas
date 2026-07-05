@@ -9,4 +9,10 @@ public interface ItemRepository extends JpaRepository<Item, Long> {
 
     List<Item> findByNomeContainingIgnoreCase(String nome);
 
+    List<Item> findByCodigoContainingIgnoreCase(String codigo);
+
+    List<Item> findByCategoriaNomeContainingIgnoreCase(String categoria);
+
+    List<Item> findByLocalNomeContainingIgnoreCase(String local);
+
 }

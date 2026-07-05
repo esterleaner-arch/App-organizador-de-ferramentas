@@ -61,4 +61,10 @@ public class Item {
     @OneToMany(mappedBy = "item",cascade = CascadeType.ALL,orphanRemoval = true)
     private java.util.List<HistoricoMovimentacao> historicos;
 
+    @Column(length = 50)
+    private String marca;
+
+    @Column(length = 50)
+    private String modelo;
+
 }
